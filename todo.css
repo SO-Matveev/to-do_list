@@ -1,0 +1,27 @@
+.container{
+    width: 320px;
+    margin: 0 auto;
+}
+.header{
+    min-height: max-content;
+    text-align: center;
+    align-items: center;
+    background-color: aquamarine;
+}
+h2{
+    padding-top: 10px;
+}
+.form{
+    padding-bottom: 10px;
+}
+.close{
+    float: right;
+}
+ul{
+    list-style-position: outside;
+    padding-left: 30px;
+}
+
+li{
+ list-style-type: none;
+}
