@@ -22,5 +22,20 @@ form.addEventListener("submit", (event) =>{
         close.className = "close";
         close.innerText = "x";
         newLi.appendChild(close);
+        document.getElementById('add-input').value ="";
     }
 });
+
+list.onclick = function (event){
+    let string = event.target.closest('li');
+    if (event.target.tagName != 'SPAN'){
+        return;
+    } 
+    string.remove();
+};
+list.addEventListener ("click", function (itemLi){
+    if (itemLi.target.tagName === "LI"){
+        itemLi.target.classList.toggle ("checked");
+    }
+});
+
